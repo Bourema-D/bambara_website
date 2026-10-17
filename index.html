@@ -316,6 +316,233 @@
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(15,23,42,0.12);
 }
+
+/* ===== BAMBARA POWERPOINT-STYLE LESSON ===== */
+
+.bambara-showcase {
+  background: #faf7f0;
+  border-radius: 18px;
+  padding: 28px 22px;
+  margin-top: 24px;
+  color: #27313a;
+}
+
+.bambara-showcase * {
+  box-sizing: border-box;
+}
+
+.bambara-slide {
+  margin-bottom: 36px;
+}
+
+.bambara-slide:last-child {
+  margin-bottom: 0;
+}
+
+.bambara-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2d7059;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bambara-heading {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 8px 0 12px;
+  color: #27313a;
+}
+
+.bambara-underline {
+  width: 65px;
+  height: 4px;
+  background: #e5a332;
+  margin-bottom: 20px;
+}
+
+.bambara-description {
+  color: #68747b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Alphabet */
+
+.bambara-alphabet {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.bambara-letter {
+  background: white;
+  border: 1px solid #deded9;
+  border-radius: 9px;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  box-shadow: 0 2px 2px #00000022;
+}
+
+.bambara-letter.vowel {
+  background: #e4f0ea;
+  border-color: #7ca899;
+  color: #286b54;
+}
+
+.bambara-note {
+  color: #2b7058;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+/* Two-column cards */
+
+.bambara-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.bambara-info-card {
+  background: white;
+  border: 1px solid #deded9;
+  border-radius: 32px;
+  padding: 25px 20px;
+  min-height: 220px;
+  box-shadow: 0 2px 2px #00000020;
+}
+
+.bambara-info-card.green {
+  background: #e5f0ea;
+}
+
+.bambara-info-card.cream {
+  background: #fbefd4;
+}
+
+.bambara-info-card h4 {
+  color: #27313a;
+  font-size: 19px;
+  margin: 0 0 4px;
+}
+
+.bambara-info-card.green h4 {
+  color: #2d7059;
+}
+
+.bambara-card-subtitle {
+  font-size: 12px;
+  color: #6c767c;
+}
+
+.bambara-card-letters {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin: 22px 0;
+  overflow-wrap: anywhere;
+}
+
+.bambara-card-words {
+  color: #2d7059;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8;
+  margin: 22px 0;
+}
+
+.bambara-card-footer {
+  color: #6c767c;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 22px;
+}
+
+/* Conversation */
+
+.bambara-dialogue {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.bambara-dialogue-row {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 11px 13px;
+  border: 1px solid #deded9;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+  box-shadow: 0 2px 2px #00000015;
+}
+
+.bambara-dialogue-row:nth-child(odd) {
+  background: #e5f0ea;
+}
+
+.bambara-speaker {
+  color: #2d7059;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.bambara-practice {
+  margin-top: 20px;
+  padding: 13px;
+  background: #e5f0ea;
+  border-left: 4px solid #2d7059;
+  border-radius: 6px;
+  color: #286b54;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .bambara-showcase {
+    padding: 20px 12px;
+  }
+
+  .bambara-heading {
+    font-size: 21px;
+  }
+
+  .bambara-alphabet {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .bambara-letter {
+    font-size: 17px;
+    padding: 10px 0;
+  }
+
+  .bambara-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bambara-info-card {
+    min-height: auto;
+  }
+
+  .bambara-dialogue-row {
+    grid-template-columns: 65px minmax(0, 1fr);
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+}
   </style>
 </head>
 <body>
@@ -410,27 +637,278 @@
 
           <p>I have had the pleasure of working with people from many different backgrounds and age groups. I specialize in teaching History and Geography to high school students, and over the past five years I have taught French, English, and Bambara in Mali, Russia, and remotely.</p>
 
-          <h4 style="margin-top:18px;color:var(--accent-2)">Walanda 1: Sigini (Bamanankan alphabet)</h4>
-          <p>The Bambara alphabet and an introduction to pronunciation and letters:</p>
-          <pre class="lesson-pre"> <strong>A.Sigini (alphabet) – siginidenw (letters):</strong> Sigini ye taamasiyɛnjɛkulu ye, min bɛ kɛ ka kan mankanw sɛbɛn. Taamasiyɛn kelen o kelen bɛ wele ko siginiden.
-Bamanankan siginidenw ye mugan ni wolonwula ye: <strong>A, B, C, D, E, Ɛ, F, G, H, I, J, K, L, M, N, Ɲ, ɳ, O, Ɔ, P, R, S, T, U, W, Y, Z</strong>
-<strong>B. Dafalenw (vowels) – dafataw (consonants)</strong> 
-Dafalen ye siginiden ye, min mankan bɛ bɔ k’a sɔrɔ mankan wɛrɛ ma fɔ ka fara a kan. Bamanankan na dafalenw ye wolonwula ye: <strong>A, E, Ɛ, I, O, Ɔ, U</strong>.
-Dafata ye siginiden ye, min mankan tɛ bɔ k’a sɔrɔ mankan wɛrɛ ma fɔ ka fara a kan. Bamanankan na dafataw ye mugan ye: <strong>B, C, D, F, G, H, J, K, L, M, N, Ɲ, ɳ, P, R, S, T, W, Y, Z</strong>.
-<strong>C.Samani (accentuation):</strong> Samani ye mankan fɔli ye ka a sama. A taamasiyɛn ye dafalen samata sɛbɛnni ye siɲɛ fila. Bamanankan na dafalen de bɛ sama. Misali (exemple): baara, fɛɛnɛ, miiri, coolo, buuru, kɔɔri, feere
-<strong>D.Nunnafɔli (nasalization)</strong>: Nunnafɔli ye mankan fɔli ye nunna. Sɛbɛnni na a taamasiyɛn ye nunnafɔlan ye, ni o filɛ nin ye: <strong>'n'</strong>. Misali: bɔlɔn, sunbala, walanda, npɛtɛ, nkalon, nson</pre>
-            
-                      <h4>Conversation Example</h4>
-                      <pre class="lesson-pre"><b>Ousmane</b>: I ni ce! Hakɛto, e tɔgɔ?
-<b>Binta</b>: Unse, i ni ce! Ne tɔgɔ ye <italic>Binta</italic>. E dun?
-<b>Ousmane</b>: Ne tɔgɔ ye <italic>Ousmane</italic>. Binta jamu?
-<b>Binta</b>: Ne jamu ko <italic>Diarra</italic>. E dun Ousmane?
-<b>Ousmane</b>: Ne jamu ko <italic>Traoré</italic>.
-<b>Binta</b>: E bɛ bɔ min Ousmane?
-<b>Ousmane</b>: Ne bɛ bɔ <italic>Mali la</italic>. E dun?
-<b>Binta</b>: Ne fana bɛ bɔ Mali la
-<b>Ousmane</b>: I ni ce. Ka an bɛn Binta.
-<b>Binta</b>: Unse! Ka an bɛn Ousmane.</pre>
+          
+<!-- ===== BAMBARA SAMPLE LESSON ===== -->
+
+<div class="bambara-showcase">
+
+  <!-- SLIDE 1: ALPHABET -->
+
+  <div class="bambara-slide">
+
+    <div class="bambara-eyebrow">ALPHABET</div>
+
+    <h3 class="bambara-heading">
+      Bamanankan sigini
+    </h3>
+
+    <div class="bambara-underline"></div>
+
+    <p class="bambara-description">
+      Bamanankan siginidenw ye mugan ni wolonwula ye.
+    </p>
+
+    <div class="bambara-alphabet">
+
+      <div class="bambara-letter vowel">A</div>
+      <div class="bambara-letter">B</div>
+      <div class="bambara-letter">C</div>
+      <div class="bambara-letter">D</div>
+      <div class="bambara-letter vowel">E</div>
+      <div class="bambara-letter vowel">Ɛ</div>
+      <div class="bambara-letter">F</div>
+      <div class="bambara-letter">G</div>
+      <div class="bambara-letter">H</div>
+
+      <div class="bambara-letter vowel">I</div>
+      <div class="bambara-letter">J</div>
+      <div class="bambara-letter">K</div>
+      <div class="bambara-letter">L</div>
+      <div class="bambara-letter">M</div>
+      <div class="bambara-letter">N</div>
+      <div class="bambara-letter">Ɲ</div>
+      <div class="bambara-letter">Ŋ</div>
+      <div class="bambara-letter vowel">O</div>
+
+      <div class="bambara-letter vowel">Ɔ</div>
+      <div class="bambara-letter">P</div>
+      <div class="bambara-letter">R</div>
+      <div class="bambara-letter">S</div>
+      <div class="bambara-letter">T</div>
+      <div class="bambara-letter vowel">U</div>
+      <div class="bambara-letter">W</div>
+      <div class="bambara-letter">Y</div>
+      <div class="bambara-letter">Z</div>
+
+    </div>
+
+    <p class="bambara-note">
+      Green tiles = dafalenw (vowels)
+    </p>
+
+  </div>
+
+  <!-- SLIDE 2: VOWELS AND CONSONANTS -->
+
+  <div class="bambara-slide">
+
+    <div class="bambara-eyebrow">SOUNDS</div>
+
+    <h3 class="bambara-heading">
+      Dafalenw ni Dafataw
+    </h3>
+
+    <div class="bambara-underline"></div>
+
+    <div class="bambara-card-grid">
+
+      <div class="bambara-info-card green">
+
+        <h4>Dafalenw</h4>
+
+        <div class="bambara-card-subtitle">
+          Vowels • 7
+        </div>
+
+        <div class="bambara-card-letters">
+          A E Ɛ I O Ɔ U
+        </div>
+
+        <p class="bambara-card-footer">
+          Say each sound slowly.<br>
+          Which sounds are new to you?
+        </p>
+
+      </div>
+
+      <div class="bambara-info-card">
+
+        <h4>Dafataw</h4>
+
+        <div class="bambara-card-subtitle">
+          Consonants • 20
+        </div>
+
+        <div class="bambara-card-letters">
+          B C D F G H J K L M<br>
+          N Ɲ Ŋ P R S T W Y Z
+        </div>
+
+        <p class="bambara-card-footer"
+           style="color:#2d7059;font-weight:700">
+          Listen → repeat → compare
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SLIDE 3: PRONUNCIATION -->
+
+  <div class="bambara-slide">
+
+    <div class="bambara-eyebrow">
+      PRONUNCIATION
+    </div>
+
+    <h3 class="bambara-heading">
+      Samani ni Nunnafɔli
+    </h3>
+
+    <div class="bambara-underline"></div>
+
+    <div class="bambara-card-grid">
+
+      <div class="bambara-info-card">
+
+        <div class="bambara-eyebrow"
+             style="color:#d99325">
+          SAMANI
+        </div>
+
+        <h4>Long vowels</h4>
+
+        <p class="bambara-card-subtitle">
+          Dafalen samata sɛbɛnni ye siɲɛ fila.
+        </p>
+
+        <div class="bambara-card-words">
+          baara &nbsp; fɛɛnɛ &nbsp; miiri<br>
+          coolo &nbsp; buuru<br>
+          kɔɔri &nbsp; feere
+        </div>
+
+        <p class="bambara-card-footer">
+          Notice the doubled vowel.
+        </p>
+
+      </div>
+
+      <div class="bambara-info-card cream">
+
+        <div class="bambara-eyebrow"
+             style="color:#d99325">
+          NUNNAFƆLI
+        </div>
+
+        <h4>Nasal pronunciation</h4>
+
+        <p class="bambara-card-subtitle">
+          Nunnafɔli ye mankan fɔli ye nunna.
+        </p>
+
+        <div class="bambara-card-words">
+          bɔlɔn &nbsp; sunkuru<br>
+          nkalon &nbsp; nson
+        </div>
+
+        <p class="bambara-card-footer">
+          Listen first, then repeat.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SLIDE 4: CONVERSATION -->
+
+  <div class="bambara-slide">
+
+    <div class="bambara-eyebrow">
+      SPEAK
+    </div>
+
+    <h3 class="bambara-heading">
+      Conversation
+    </h3>
+
+    <div class="bambara-underline"></div>
+
+    <div class="bambara-dialogue">
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Bourema</span>
+        <span>I ni wula! Hakɛto, e tɔgɔ?</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Jacori</span>
+        <span>
+          Unse/Nba, i ni wula!
+          Ne tɔgɔ Jacori. E dun?
+        </span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Bourema</span>
+        <span>
+          Ne tɔgɔ Bourema. Jacori jamu?
+        </span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Jacori</span>
+        <span>
+          Ne jamu Zeigler. E dun?
+        </span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Bourema</span>
+        <span>Ne jamu Diarra.</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Jacori</span>
+        <span>E bɛ bɔ min Bourema?</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Bourema</span>
+        <span>Ne bɛ bɔ Mali la. E dun?</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Jacori</span>
+        <span>Ne bɛ bɔ Amerique.</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Bourema</span>
+        <span>I ni ce. Ka an bɛn.</span>
+      </div>
+
+      <div class="bambara-dialogue-row">
+        <span class="bambara-speaker">Jacori</span>
+        <span>Unse/Nba! Ka an bɛn.</span>
+      </div>
+
+    </div>
+
+    <div class="bambara-practice">
+      Practice: Greet your partner, say your name
+      and family name, then say where you come from.
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ===== END BAMBARA SAMPLE LESSON ===== -->
                     </section>
 
         <!-- TESTIMONIALS -->
@@ -541,7 +1019,8 @@ Dafata ye siginiden ye, min mankan tɛ bɔ k’a sɔrɔ mankan wɛrɛ ma fɔ ka 
     <div class="contact-actions" style="margin-top:14px">
       <a class="mail" href="mailto:bouremadiarra89@gmail.com?subject=Interested%20in%20Bambara%20lessons">📧 Email Me</a>
       <a class="call" href="tel:+36704021908">📞 Call / WhatsApp</a>
-      <a class="btn" style="background:#f3f4f6;color:#111;border-radius:10px" href="#services">📚 Lessons & Prices</a>
+      <a class="btn" style="background:#f3f4f6;color:#111;border-radius:10px" href="#lessons">📚 Lessons & Prices</a>
+
     </div>
 
     <hr style="margin:14px 0;border:none;border-top:1px solid #eef2f8" />
